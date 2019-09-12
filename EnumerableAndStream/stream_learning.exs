@@ -1,4 +1,4 @@
-# Stream support laze <> eager supported by enum
+# Stream support lazy <> eager supported by enum
 1..100000 |> Stream.map(&(&1*10)) |> Stream.filter(fn x -> rem(x, 2) == 0 end) |> Enum.sum
 # Stream are lazy and composable enumerables
 # They are composable because we can pipe many stream operations.
