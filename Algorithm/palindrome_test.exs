@@ -1,7 +1,7 @@
 ExUnit.start
 defmodule PalindromeTest do
   use ExUnit.Case
-
+  doctest Palindrome
   test "return nil if input is not string" do
     assert Palindrome.longest_palindrome(1223) == nil
   end

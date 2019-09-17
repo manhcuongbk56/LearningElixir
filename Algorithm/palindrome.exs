@@ -1,7 +1,12 @@
 defmodule Palindrome do
-
-  def longest_palindrome(s) when not is_binary(s), do: nil
-  def longest_palindrome(s) do
+  @doc """
+    Return longest palindrome substring of input
+    ## Examples
+      iex> Palindrome.longest_substring_palindrome("cabba")
+      "abba"
+  """
+  def longest_substring_palindrome(s) when not is_binary(s), do: nil
+  def longest_substring_palindrome(s) do
     if String.length(s) < 2 do
       s
     else
